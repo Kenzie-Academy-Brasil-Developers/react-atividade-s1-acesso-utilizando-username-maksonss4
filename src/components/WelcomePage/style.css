@@ -1,0 +1,35 @@
+h2:hover{
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -webkit-transform: scale(1.05);
+}
+
+h2{
+    animation: frame 1s ease 0s 1 normal forwards;
+    color: rgb(27, 169, 37);
+    border-bottom: 2px solid rgb(27, 169, 37);
+}
+
+@keyframes frame {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+	}
+}
+
+button{
+    border: 0;
+    border-radius: 5px;
+    padding: 3px 10px;
+    background-color: #f1f1f1;
+    font-weight: 600;
+    cursor: pointer;
+}
